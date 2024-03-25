@@ -125,12 +125,12 @@ def index(eventCode):
         # msg = eventCode
 
 
-    file = open("templates/index.html", 'w')
+    file = open("Templates/index2.html", 'w')
     file.write(msg)
     file.close
-    return flask.send_from_directory(".", path="templates/index.html")
+    return flask.send_from_directory(".", path="Templates/index2.html")
 
-   #return render_template('index.html')  # this line only displays files in the templates sub directory.  To display from other directories, see below
+   #return render_template('index2.html')  # this line only displays files in the templates sub directory.  To display from other directories, see below
 
 
 if __name__ == '__main__':

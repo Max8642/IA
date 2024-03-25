@@ -133,7 +133,7 @@ html = rawData.to_html() + analyzedData.to_html()
 #print(html)
 
 # open file and write
-file = open("templates/index.html", 'w')
+file = open("Templates/index2.html", 'w')
 file.write(html)
 file.close
 
@@ -141,7 +141,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-   #return render_template('index.html')  # this line only displays files in the templates sub directory.  To display from other directories, see below
-   return flask.send_from_directory(".", path="templates/index.html")
+   #return render_template('index2.html')  # this line only displays files in the templates sub directory.  To display from other directories, see below
+   return flask.send_from_directory(".", path="Templates/index.html")
 if __name__ == '__main__':
    app.run()
